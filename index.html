@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfx OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Gemini_Generated_Image_ukybplukybplukyb.png" type="image/png">
+</head>
+<body>
+    <dialog id="edge">
+        <div class="nav-bar2">
+            <div>
+            <h2>Edge</h2>
+            </div>
+            <div>
+            <button onclick="edge.close(); search.value = ''">✖️</button>
+            <button onclick="edge.close();">➖</button>
+            </div>
+        </div>
+        <h1 style="text-align: center;">Edge</h1>
+        <input type="text" id="search" placeholder="Search">
+        <button onclick="any()">🔍</button>
+    </dialog>
+    <dialog id="note">
+        <div class="nav-bar2" >
+            <div>
+            <h2>Notes</h2>
+            </div>
+            <div>
+            <button onclick="note.close(); text.value = ''">✖️</button>
+            <button onclick="note.close();">➖</button>
+            </div>
+        </div>
+        <h1 style="text-align: center;">Notes</h1>
+        <textarea id="text-note" placeholder="Write here ..." cols="38" rows="7" style="text-align: center;"></textarea>
+    </dialog>
+    <dialog id="file">
+        <div class="nav-bar2" >
+            <div>
+            <h2>Files</h2>
+            </div>
+            <div>
+            <button onclick="file.close();">✖️</button>
+            <button onclick="file.close();">➖</button>
+        </div>
+    </div>
+    <h1>🗒️</h1>
+    <p>Document.txt</p>
+    <h1>🗒️</h1>
+    <p>Project.pdf</p>
+    <h4 onclick="window.open('https://drive.google.com/drive/home', '_blank', 'width=600, height=600')">More...</h4>
+    </dialog>
+    <dialog id="wind">
+        <div class="nav-bar2" >
+            <div>
+            <h3>Wolfx os</h3>
+            </div>
+            <div>
+            <button onclick="wind.close();">✖️</button>
+            </div>
+        </div>
+        <h2 onclick="window.open('https://gemini.google.com', '_blank', 'width=600, height=600')" style="margin-left: 3px;">🤖</h2>
+            <h2 onclick="edge.showModal()">🌐</h2>
+            <h2 onclick="note.showModal()">📝</h2>
+            <h2 onclick="file.showModal()">📁</h2>
+    </dialog>
+    <div class="cont3">
+    <img src="Gemini_Generated_Image_ukybplukybplukyb.png" alt="">
+    </div>
+    <div class="os">
+
+        <h1 onclick="edge.showModal()" style="margin-left: 10px; " >🌐</h1>
+        <h1 onclick="note.showModal()" style="margin-left: 10px;" >📝</h1>
+        <h1 onclick="file.showModal()" style="margin-left: 10px;" >📁</h1>
+        <div class="cont">
+            <div class="nav-bar">
+            <div class="weather">
+                <h2 onclick="window.open('https://www.bing.com/search?qs=OS&pq=weth&sk=CSYN1&sc=13-4&pglt=427&q=weather&cvid=2ad15d1a33074351b7aa1cf17e1df78f&gs_lcrp=EgRlZGdlKgYIARAAGEAyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBBFGDzSAQg1NDgwajBqMagCALACAA&FORM=ANNTA1&adppc=EDGEDBB&PC=HCTS', '_blank', 'width=600, height=600')">🌤️</h2>
+            </div>
+            <div class="apps">
+                <h2 style="margin-right: 30px;" onclick="wind.showModal()">🐺</h2>
+                <h2 onclick="window.open('https://www.youtube.com', '_blank', 'width=600, height=600')">▶️</h2>
+                <h2 onclick="window.open('https://gemini.google.com', '_blank', 'width=600, height=600')">🤖</h2>
+                <h2 onclick="edge.showModal()">🌐</h2>
+                <h2 onclick="note.showModal()">📝</h2>
+                <h2 onclick="file.showModal()">📁</h2>
+                <input type="text" id="search2" placeholder="Search">
+                <button onclick="any2()">🔍</button>
+            </div>
+            <div class="tdi">
+                <h2 onclick="alert(`Time and Date: ${dat}\n Battery: 78%\n Light: ======-----`)">🔋🛜⏰</h2>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

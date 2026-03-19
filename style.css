@@ -1,0 +1,133 @@
+@keyframes any {
+    from {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes any2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+.os {
+    animation-name: any2;
+    animation-duration: 5s;
+}
+.cont3 {
+    top: 50%;
+    bottom: 50%;
+    transform: translate(230%, -20%);
+    position: fixed;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    animation-name: any;
+    animation-duration: 3s;
+}
+body {
+    margin: 0;
+    background: url(macos-monterey-wwdc-21-stock-dark-mode-5k-3840x2160-5585.jpg) no-repeat;
+    background-color: rgb(66, 0, 83);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    animation-name: any3;
+    animation-duration: 2s;
+}
+.cont {
+    position: fixed;
+    z-index: 10000000;
+    bottom: 10px;
+    background: linear-gradient(to right, rgba(118, 118, 118, 0.237), rgba(129, 129, 129, 0.664), rgba(118, 118, 118, 0.237), rgba(129, 129, 129, 0.709), rgba(118, 118, 118, 0.237));
+    border: 2px rgb(158, 157, 157) solid;
+    width: 99.75%;
+    border-radius: 50px;
+    height: 70px;
+    backdrop-filter: blur(10px);
+}
+.nav-bar {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+h2, h1 {
+    cursor: pointer;
+    width: fit-content;
+}
+h2 {
+    display: inline-block;
+}
+input{
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+}
+button {
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(201, 235, 255);
+    border: 3px solid rgb(156, 214, 247);
+}
+dialog {
+    width: 310px;
+    height: 310px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.47);
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 6px black solid;
+    overflow: hidden;
+}
+dialog h1 {
+    width: 100%;
+}
+dialog h4 {
+    background-color: rgba(81, 123, 141, 0.668);
+    padding: 6px;
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+}
+dialog button {
+    background-color: black;
+    border: 3px solid rgb(55, 55, 55);
+}
+dialog input {
+    width: 260px;
+}
+dialog .nav-bar2 {
+    display: flex;
+    flex-direction: row;
+    gap: 190px;
+    align-items: center;
+}
+#note input {
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    text-align: center;
+    width: 295px;
+    height: 130px;
+}
+#file p{
+    margin-top: -10px;
+}
+#wind h2 {
+    margin-right: 38px;
+}
+#wind  .nav-bar2{
+    gap: 190px;
+}
+#text-note {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
